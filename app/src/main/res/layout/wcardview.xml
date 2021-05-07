@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:minWidth="280dp"
+    android:maxWidth="280dp"
+    android:background="@drawable/tionpink"
+    android:weightSum="2"
+
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal"
+    android:clickable="true">
+    <ImageView
+        android:id="@+id/wstamp"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="90dp"
+        android:src="@color/darkgreen"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="29dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wcategoryimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/prodcard"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:maxLength="13"
+                android:id="@+id/wpronamelist"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/metroregular"
+                android:letterSpacing="0.07"
+                android:text="Product Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18dp">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wshownot"
+                android:visibility="visible"></ImageView>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/wcrdcategory"
+                android:visibility="invisible"></TextView>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"
+                android:id="@+id/wprlist">
+
+            </TextView>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible"
+                android:id="@+id/wcrddesc">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/wcrdmfg"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/metrosemi"
+                android:letterSpacing="0.02"
+                android:text="Product Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/grey"
+                android:textSize="16dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                android:id="@+id/weditbtn"
+                android:layout_width="17dp"
+
+                android:layout_height="18dp"
+                android:background="@drawable/editbtn"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/wdelbtn"
+                android:layout_width="14dp"
+                android:layout_height="18dp"
+                android:padding="12dp"
+                android:layout_marginLeft="19dp"
+
+                android:background="@drawable/delbtn"
+                android:clickable="true"
+                >
+
+            </ImageButton>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

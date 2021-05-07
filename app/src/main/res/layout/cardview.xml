@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:minWidth="280dp"
+    android:maxWidth="280dp"
+    android:background="@drawable/tionpink"
+    android:weightSum="2"
+    android:layout_marginTop="1dp"
+
+    android:orientation="horizontal"
+    android:clickable="true">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="29dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/prodcard"></ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/pronamelist"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/metroregular"
+            android:letterSpacing="0.07"
+            android:text="Product Name n njnnn"
+            android:maxLength="13"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:id="@+id/crdcategory"
+            android:visibility="invisible"></TextView>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:id="@+id/prlist">
+
+        </TextView>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:id="@+id/crddesc">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/crdmfg"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/metrosemi"
+            android:letterSpacing="0.02"
+            android:text="Product Name"
+            android:textAlignment="textStart"
+            android:textColor="@color/grey"
+            android:textSize="16dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/editbtn"
+            android:layout_width="17dp"
+
+            android:layout_height="18dp"
+            android:background="@drawable/editbtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/delbtn"
+            android:layout_width="14dp"
+            android:layout_height="18dp"
+            android:padding="12dp"
+            android:layout_marginLeft="19dp"
+
+            android:background="@drawable/delbtn"
+            android:clickable="true"
+            >
+
+        </ImageButton>
+
+
+    </LinearLayout>
+</LinearLayout>
+

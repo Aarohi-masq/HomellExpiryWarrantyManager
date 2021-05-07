@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "76323957695",
+    "firebase_url": "https://homell-org.firebaseio.com",
+    "project_id": "homell-org",
+    "storage_bucket": "homell-org.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76323957695:android:877996b61e5df7a3e68f0a",
+        "android_client_info": {
+          "package_name": "com.homell.Homell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76323957695-t7aiarjr35udggarm8qet2tb8t9oks42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdnWIWf6xNckK4jq28HMdsT32kWhHQNFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76323957695-t7aiarjr35udggarm8qet2tb8t9oks42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

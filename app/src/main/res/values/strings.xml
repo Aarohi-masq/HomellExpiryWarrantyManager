@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Homell</string>
+    <string name="expirydate">Expiry:</string>
+
+
+    <string name="sh1">Add Expiry Product</string>
+    <string name="sh2">Add Expiry Product</string>
+    <string name="sh3">head3</string>
+
+
+    <string name="h1">Add Warranty Product</string>
+    <string name="h2">Add Warranty Product</string>
+    <string name="h3">head3</string>
+
+    <string name="obh1">Manage Products</string>
+    <string name="obh2">Realtime Sync</string>
+    <string name="obh3">Get Notified</string>
+
+    <string name="obd1">From Expiry to Warranty, it\'s all here at your Fingertips. All you have to do is to Add all your Products to the app</string>
+    <string name="obd2">Added Products will Automatically Sychronize between all of your Family Member\'s Devices</string>
+    <string name="obd3">Recieve Notification whenever Expiry or Warranty of a Product is Approaching</string>
+    <string name="as_of_now_we_support_png_jpeg_formats_only_but_fortunately_you_can_upload_screenshots_of_your_pdf_invoice_while_adding_a_product"><![CDATA[As of now, We support PNG & JPEG formats only. But Fortunately, You can upload Screenshots of your PDF Invoice while adding a Product]]></string>
+</resources>

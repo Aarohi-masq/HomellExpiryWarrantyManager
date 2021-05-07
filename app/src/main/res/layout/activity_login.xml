@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.homell.Homell.Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/linearLayout"
+                android:layout_width="402dp"
+                android:layout_height="226dp"
+                android:background="@drawable/loginele"></ImageView>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/cormorantbold"
+                            android:text="Welcome Back"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="42dp" />
+
+                        <TextView
+                            android:id="@+id/recovertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metroregular"
+                            android:letterSpacing="0.05"
+                            android:text="Please Login to Continue"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="25dp"
+                            android:layout_height="60dp">
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="322dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/emailfield1"
+                                tools:ignore="MissingConstraints"
+                                tools:layout_editor_absoluteX="-1dp"></ImageView>
+
+                            <EditText
+                                android:id="@+id/em"
+                                android:layout_width="227dp"
+                                android:layout_height="49dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginBottom="2dp"
+                                android:background="@null"
+                                android:ems="10"
+                                android:fontFamily="@font/metromed"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/black"
+                                android:textSize="19dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:layout_height="60dp">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/passfield"
+                                tools:ignore="MissingConstraints"></ImageView>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textInputLayout"
+                                android:layout_width="227dp"
+
+                                android:layout_height="47dp"
+
+
+                                android:layout_marginStart="25dp"
+                                android:layout_marginBottom="6dp"
+                                app:hintAnimationEnabled="false"
+                                app:hintEnabled="false"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                                app:layout_constraintTop_toTopOf="@id/imageView4"
+                                app:layout_constraintVertical_bias="1.0"
+                                app:passwordToggleEnabled="true"
+                                app:passwordToggleTint="@color/colorAccent"
+                                tools:ignore="MissingConstraints">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/pass"
+                                    android:layout_width="227dp"
+                                    android:layout_height="49dp"
+                                    android:background="@null"
+
+                                    android:ems="10"
+                                    android:fontFamily="@font/metromed"
+                                    android:hint="Password"
+                                    android:inputType="textPassword"
+                                    android:textSize="19dp"
+                                    app:hintAnimationEnabled="false"
+                                    app:hintEnabled="false"
+                                    tools:ignore="MissingConstraints" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/fgpas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginBottom="10dp"
+                            android:clickable="true"
+                            android:fontFamily="@font/metromed"
+                            android:letterSpacing="0.04"
+                            android:text="FORGOT PASSWORD ?"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="14dp" />
+
+
+
+                        <TextView
+                            android:id="@+id/atinfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:fontFamily="@font/metroregular"
+                            android:text="No. of incorrect attempts"
+                            android:textAlignment="center"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/btnlogin"
+                        android:layout_width="254dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bgbtn"
+                        android:fontFamily="@font/metromed"
+                        android:letterSpacing="0.05"
+
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/creame"
+                        android:textSize="15dp" />
+
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/signupcreate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/metrosemi"
+                        android:text="SIGN UP"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

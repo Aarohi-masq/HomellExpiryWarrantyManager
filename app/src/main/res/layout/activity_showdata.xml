@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/showback"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backbtnshow"></ImageView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metromed"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/creame"
+                    android:layout_centerVertical="true"
+                    android:text="PRODUCT DETAILS"></TextView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="66dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="36dp"
+
+                    android:src="@drawable/showprodicon"></ImageView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:id="@+id/shwproductname"
+                        android:layout_marginLeft="25dp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/latobold"
+                        android:text="Apple IPHONE 6"
+                        tools:ignore="MissingConstraints">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/shwcateg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/latolight"
+                        android:text="in Electronics"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        app:layout_constraintTop_toBottomOf="@+id/shwproductname"
+                        tools:ignore="MissingConstraints"></TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="632dp"
+            android:layout_marginTop="35dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="1100dp"
+                            android:layout_marginTop="50dp"
+                            android:src="@drawable/check"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:layout_editor_absoluteX="0dp">
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="120dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                            <LinearLayout
+                                android:layout_width="358dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="20dp"
+
+
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="MissingConstraints">
+
+                                <RelativeLayout
+                                    android:id="@+id/aboutselected"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/metrosemi"
+
+                                        android:text="About"
+                                        android:textColor="@color/black"
+                                        android:textSize="25dp"></TextView>
+
+
+
+
+                                </RelativeLayout>
+
+
+
+
+                            </LinearLayout>
+                            <!-- about -->
+
+                            <LinearLayout
+                                android:id="@+id/aboutlayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="40dp"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="69dp"
+                                            android:layout_height="69dp"
+                                            android:src="@drawable/calshow"></ImageView>
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginLeft="14dp"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Expiry Date"
+                                            android:textSize="13dp"
+                                            android:layout_marginBottom="9dp"
+                                            android:textColor="@color/grey"
+                                            android:fontFamily="@font/metromed"></TextView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="2020/05/02"
+                                            android:id="@+id/mfgdateshw"
+                                            android:fontFamily="@font/metrosemi"
+                                            android:textSize="19dp"
+                                            android:textColor="@color/show"></TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="45dp"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="69dp"
+                                            android:layout_height="69dp"
+                                            android:src="@drawable/disshow"></ImageView>
+
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginLeft="14dp"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="9dp"
+                                            android:fontFamily="@font/metromed"
+                                            android:text="Description"
+                                            android:textColor="@color/grey"
+                                            android:textSize="13dp"></TextView>
+
+                                        <TextView
+                                            android:layout_width="220dp"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Description not available"
+                                            android:id="@+id/descshw"
+                                            android:fontFamily="@font/metrosemi"
+                                            android:textSize="19dp"
+                                            android:textColor="@color/show"></TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!-- invoice -->
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.gms.ads.AdView
+
+            xmlns:ads = "http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize = "BANNER"
+            ads:adUnitId= "ca-app-pub-6230162403473872/7480030110">
+
+        </com.google.android.gms.ads.AdView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

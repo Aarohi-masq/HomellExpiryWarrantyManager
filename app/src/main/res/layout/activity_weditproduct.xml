@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edDesc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightbg"
+    android:visibility="visible"
+    android:orientation="vertical"
+    tools:context="com.homell.Homell.Weditproduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+
+            android:background="@drawable/loadroundbg">
+
+            <ImageView
+                android:id="@+id/wedaddback"
+                android:padding="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="31dp"
+                android:src="@drawable/backbtn">
+
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metromed"
+                    android:text="Update Product"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="18dp"></TextView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="9dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_centerHorizontal="true"
+
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:paddingTop="20dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="8dp"
+                            >
+
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/addexpname"
+                                android:src="@drawable/grpaddtext1"></ImageView>
+
+
+                            <EditText
+                                android:id="@+id/editproductname"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignRight="@+id/addexpname"
+                                android:layout_alignLeft="@id/addexpname"
+                                android:layout_alignBottom="@+id/addexpname"
+                                android:layout_marginBottom="22dp"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Product Name"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/darkgreen"
+
+                                android:textSize="18dp" />
+
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/expcategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/expcategory"></ImageView>
+
+
+                            <TextView
+                                android:id="@+id/editcateg"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignLeft="@id/expcategory"
+                                android:layout_alignRight="@+id/expcategory"
+                                android:layout_alignBottom="@+id/expcategory"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="22dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Enter Category"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/darkgreen"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="7dp"
+                            >
+
+
+                            <Button
+
+                                android:id="@+id/editfoodexpbtn"
+                                android:layout_width="104dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/electronicsbtn"
+                                ></Button>
+
+                            <Button
+                                android:id="@+id/editmedexpbtn"
+                                android:layout_width="89dp"
+                                android:layout_height="30dp"
+                                android:layout_alignLeft="@+id/editfoodexpbtn"
+                                android:layout_marginLeft="110dp"
+                                android:background="@drawable/furniturebtn">
+
+                            </Button>
+
+                            <Button
+
+                                android:id="@+id/editothersexpbtn"
+                                android:layout_width="69dp"
+                                android:layout_height="30dp"
+                                android:layout_alignLeft="@+id/editmedexpbtn"
+                                android:layout_marginLeft="95dp"
+
+                                android:background="@drawable/otherscategory"></Button>
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:visibility="gone"
+                            android:paddingLeft="27dp"
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/expdateadd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/expdateadd"></ImageView>
+
+
+                            <EditText
+                                android:id="@+id/editmfgdate"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignLeft="@id/expdateadd"
+                                android:layout_alignRight="@+id/expdateadd"
+                                android:layout_alignBottom="@+id/expdateadd"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="22dp"
+                                android:background="@color/creame"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Select Date"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/darkgreen"
+                                android:textColorHint="@color/lightgreen"
+                                android:textSize="18dp" />
+
+
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+
+                            >
+
+                            <TimePicker
+                                android:id="@+id/pickertime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+                            </TimePicker>
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/expadddisc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/expdescritionadd"></ImageView>
+
+
+                            <EditText
+                                android:id="@+id/editdesc"
+                                android:layout_width="240dp"
+                                android:layout_height="wrap_content"
+
+                                android:inputType="textMultiLine"
+                                android:lines="8"
+                                android:minLines="6"
+                                android:gravity="top|left"
+                                android:maxLines="10"
+                                android:scrollbars="vertical"
+                                android:layout_alignLeft="@id/expadddisc"
+                                android:layout_alignRight="@+id/expadddisc"
+                                android:layout_alignTop="@+id/expadddisc"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginTop="40dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:textDirection="ltr"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="write anything you want
+to remember about this
+product."
+                                android:textColor="@color/darkgreen"
+
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp">
+
+                    <Button
+                        android:id="@+id/editsubbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/updatebtn"
+                        android:fontFamily="@font/metrosemi"
+                        android:onClick="update"
+
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.gms.ads.AdView
+
+            xmlns:ads = "http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize = "BANNER"
+            ads:adUnitId= "ca-app-pub-6230162403473872/7743205258">
+
+        </com.google.android.gms.ads.AdView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

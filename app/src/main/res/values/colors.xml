@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#F17E7B</color>
+    <color name="colorAccent">#F17E7B</color>
+    <color name="darkpurple">#703094</color>
+
+    <color name="lgpink">#FFC2C6</color>
+    <color name="black">#000000</color>
+    <color name="lightpurple">#8A56AC</color>
+    <color name="creame">#FBF3E9</color>
+    <color name="grey">#6E6F6F</color>
+    <color name="lightblack">#7B7E7E</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="darkgreen">#375A64</color>
+
+    <color name="lightgreen">#668F9B</color>
+    #2C2C2C
+    #F5F6FA
+
+    <!-- dashboard color -->
+
+    <color name="welcomehome">#4B4B4B</color>
+    <color name="crdname">#605F5FD1</color>
+    <color name="crddate">#6F6F6F</color>
+    <color name="navname">#668F9B</color>
+    <color name="lightbg">#F5F6FA</color>
+
+    <!-- showprod -->
+    <color name="show">#2C2C2C</color>
+
+
+    <!-- contactus -->
+    <color name="contactusheadbg">#EAEAEA</color>
+    <color name="contactusquesbg">#EFEDED</color>
+    <color name="contactusquescol">#838282</color>
+    <color name="contactusqtexthead">#414141</color>
+
+
+
+
+
+
+
+</resources>

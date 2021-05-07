@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightbg"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".contactus">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+
+        android:background="@drawable/loadroundbg"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/contactback"
+            android:padding="4dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="31dp"
+            android:src="@drawable/backbtn">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/metromed"
+                android:text="Contact Us"
+                android:textColor="@color/darkgreen"
+                android:textSize="18dp"></TextView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions :"
+            android:fontFamily="@font/cormorantbold"
+            android:textSize="39dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/darkgreen"
+            ></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_marginBottom="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="450dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/expiryheadques"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/siginbutton">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/contactusqtexthead"
+                            android:text="Expiry Related Questions :"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/metrosemi"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="16dp"></TextView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/faqhead"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="20dp"></ImageView>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/expiryquesgrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/explin1"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How do I Add New Product"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:id="@+id/expans1"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Expiry List > Click on + Button placed at Top Right Corner  > Enter Product Details > Click on Add Button"
+                                    android:lineHeight="17dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/expdrop1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/explin2"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How do I Update Product"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/expans2"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Expiry List > Find Desired product card > Click on the pencil Icon of that card"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/expdrop2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/explin3"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How do I Delete Product"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/expans3"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Expiry List > Find Desired product card > Click on the Bin Icon of that card > Confirm to Delete"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/expdrop3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/explin4"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How to see Product Details"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/expans4"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Expiry List > Find Desired product card > Click on the card"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/expdrop4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/explin5"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="When will I get Notified"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/expans5"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="When you Add a Product you are Promote to enter Desire Notification Time for each Individual Product.     App will send you Notifcation 7 day Prior of Expiry Date according to your chosen Time."
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/expdrop5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/explin6"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How to sync my Data"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/expans6"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="There is no need to Sync Data Manually Because Everytime you add new Product to the list your Data got synced between all Your Devices"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/expdrop6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/warrheadques"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/siginbutton">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/contactusqtexthead"
+                            android:text="Warranty Related Questions :"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/metrosemi"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="16dp"></TextView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/faqhead"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="20dp"></ImageView>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/warrquesgrid"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/warrlin1"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How do I Add New Product"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:id="@+id/warrans1"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Warranty List > Click on + Button placed at Top Right Corner  > Enter Product Details > Click on Add Button"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/warrdrop1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/warrlin2"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How do I Update Product"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:id="@+id/warrans2"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Warranty List > Find Desired product card > Click on the pencil Icon of that card"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/warrdrop2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/warrlin3"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How do I Delete Product"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/warrans3"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Warranty List > Find Desired product card > Click on the Bin Icon of that card > Confirm to Delete"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/warrdrop3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/warrlin4"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How to see Product Details"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/warrans4"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow Below given Steps:     Open Warranty List > Find Desired product card > Click on the card"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/warrdrop4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/warrlin5"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="When will I get Notified"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/warrans5"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="When you Add a Product you are Promote to enter Desire Notification Time for each Individual Product.     App will send you Notifcation 7 day Prior of Warranty Date according to your chosen Time."
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/warrdrop5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/warrlin6"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How to upload PDF Invoice"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/warrans6"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="@string/as_of_now_we_support_png_jpeg_formats_only_but_fortunately_you_can_upload_screenshots_of_your_pdf_invoice_while_adding_a_product"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/warrdrop6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/warrlin7"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How to sync my Data"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/warrans7"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="There is no need to Sync Data Manually Because Everytime you add new Product to the list your Data got synced between all Your Devices"
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/warrdrop7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/accountheadques"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/siginbutton">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/contactusqtexthead"
+                            android:text="Account Related Questions :"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/metrosemi"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="16dp"></TextView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/faqhead"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="20dp"></ImageView>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/accountquesgrid"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:id="@+id/acclin1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Can I Use App on Multiple Devices using same Account"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:id="@+id/accans1"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Yes, you can use your Account on as many devices you want."
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/accdrop1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:id="@+id/acclin2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How to Change Password"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/accans2"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow below given steps:           On the Home page Click on your Name > Click Change Password > Enter your email > Press Change Button           You will Recieve an email with a link to Change your Password."
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/accdrop2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:background="@drawable/siginbutton">
+                            <LinearLayout
+                                android:id="@+id/acclin3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="15dp"
+
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="How to get Logged Out"
+
+                                    android:fontFamily="@font/metromed"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+                                <TextView
+                                    android:id="@+id/accans3"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_width="210dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/contactusquescol"
+                                    android:text="Follow below given steps:           On the Home page Click on your Name > Click on Log Out Option                          You will be sent to Login Screen."
+                                    android:lineHeight="18dp"
+
+                                    android:fontFamily="@font/metroregular"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="15dp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/accdrop3"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/faqques"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="20dp"></ImageView>
+
+
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Still have any Query ?"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/metromed"
+                android:textSize="14dp"></TextView>
+            <ImageView
+                android:id="@+id/sendmailbtn"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sbmitbtn"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

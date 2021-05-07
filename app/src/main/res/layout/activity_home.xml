@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.homell.Homell.home"
+
+
+
+    >
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:headerLayout="@null"
+        app:menu="@null"
+        android:id="@+id/navellipes"
+        android:background="@drawable/transi"
+        >
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="398dp"
+            android:layout_marginStart="-52dp"
+            android:layout_marginTop="-62dp"
+            android:src="@drawable/navellipse">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/navexittap"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="270dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/navlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/navhomlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/navhom"
+                        android:layout_marginTop="32dp"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/cormorantbold"
+                        android:textSize="28dp"
+                        android:marqueeRepeatLimit="2"
+                        android:textColor="@color/darkgreen"
+                        android:layout_height="wrap_content"
+                        android:text="HOME">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="5dp"
+                        android:src="@drawable/namedrop"
+                        android:layout_toRightOf="@+id/navhom"
+                        android:layout_marginStart="7dp"
+                        android:layout_centerVertical="true"></ImageView>
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="21dp"
+                >
+
+                <ImageView
+                    android:id="@+id/rateus"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/navfeedback"></ImageView>
+
+                <ImageView
+                    android:id="@+id/contactus"
+                    android:layout_marginTop="21dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/navcontactus"></ImageView>
+                <ImageView
+                    android:id="@+id/navpass"
+                    android:layout_marginTop="21dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/navchangepass">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/lout"
+                    android:layout_marginTop="21dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/navlogoutbtn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <ScrollView
+        android:id="@+id/scrllview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+
+                    android:paddingTop="29dp"
+                    android:paddingLeft="29dp"
+                    android:paddingRight="29dp"
+                    android:paddingBottom="29dp">
+
+                    <LinearLayout
+                        android:id="@+id/navopen"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            >
+
+                            <TextView
+                                android:id="@+id/homename"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="7"
+
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="35dp"
+                                android:textAllCaps="false"
+                                android:layout_marginBottom="47dp"
+                                android:fontFamily="@font/metrobold"
+                                android:textColor="@color/darkgreen"
+                                android:textSize="30dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="35dp"
+                                android:text="'s Family"
+                                android:textAllCaps="false"
+                                android:layout_marginBottom="47dp"
+                                android:fontFamily="@font/metrobold"
+                                android:textColor="@color/darkgreen"
+                                android:textSize="30dp" />
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+
+                                android:layout_width="12dp"
+                                android:layout_height="6dp"
+
+
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginStart="7dp"
+                                android:src="@drawable/namedrop"
+                                android:layout_marginTop="51dp"
+
+
+                                android:layout_marginBottom="47dp"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="42dp"
+                        android:fontFamily="@font/metroregular"
+                        android:text="Welcome home,"
+                        android:textColor="@color/welcomehome"
+                        android:textSize="13dp" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/crdhomedate"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="12dp"
+                        android:id="@+id/procardhome">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/homedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textAlignment="textStart"
+
+                        android:fontFamily="@font/vidaloka"
+                        android:textSize="40dp"
+                        android:textColor="@color/white"
+                        android:layout_alignTop="@id/procardhome"
+                        android:layout_marginTop="36dp"
+                        android:layout_alignLeft="@id/procardhome"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/homemonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MMM"
+                        android:fontFamily="@font/metrosemi"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"
+                        android:layout_alignTop="@id/homedate"
+                        android:layout_marginTop="45dp"
+                        android:textAllCaps="true"
+                        android:layout_alignLeft="@id/procardhome"
+                        android:layout_marginLeft="32dp" />
+
+                    <ImageView
+                        android:id="@+id/expbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/testexpbtn"
+                        android:layout_alignTop="@id/procardhome"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="110dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/warrhomebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/procardhome"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="169dp"
+                        android:background="@drawable/warrbtn"></ImageView>
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/hsearchView"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        app:searchIcon="@drawable/searchi"
+                        android:background="@drawable/reccc"
+
+                        android:layout_alignRight="@id/procardhome"
+                        android:layout_alignTop="@id/procardhome"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginRight="40dp"
+                        app:queryBackground="@drawable/searchbghome"
+                        app:queryHint="search"
+                        app:iconifiedByDefault="true">
+
+                    </androidx.appcompat.widget.SearchView>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Approaching"
+                            android:id="@+id/expapproachhomme"
+                            android:textColor="@color/black"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/metromed"
+                            android:textSize="21dp">
+                        </TextView>
+
+                        <ImageView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="80dp"
+                            android:layout_height="2dp"
+                            android:src="@color/darkgreen"
+                            android:layout_marginStart="20dp">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="In Warranty Products"
+                        android:fontFamily="@font/latobold"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="50dp"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="view all"
+                        android:id="@+id/hwarview"
+                        android:fontFamily="@font/latoreg"
+                        android:layout_marginTop="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="15dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <TextView
+                        android:id="@+id/textview01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Items"
+                        android:visibility="gone"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginLeft="150dp">
+
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/hwarlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Approaching"
+                        android:visibility="gone"
+                        android:id="@+id/expapproachhommeee"
+                        android:fontFamily="@font/metromed"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="20dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/expapproachhommeee"
+                        android:layout_marginStart="20dp"
+                        android:text="In Expiry Products"
+                        android:fontFamily="@font/latobold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/grey"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="view all"
+                        android:id="@+id/hexpview"
+                        android:fontFamily="@font/latoreg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="15dp"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="12dp">
+                    <TextView
+                        android:id="@+id/textview02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Items"
+                        android:visibility="gone"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginLeft="150dp"></TextView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/hexplist"
+
+                        android:layout_marginLeft="20dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relprog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:background="@drawable/load"
+            android:layout_centerInParent="true">
+            <ProgressBar
+                android:id="@+id/proghome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="visible"
+
+                >
+
+            </ProgressBar>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Desc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightbg"
+    android:visibility="visible"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context="com.homell.Homell.Wrealtime">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:elevation="2dp"
+
+            android:background="@drawable/loadroundbg">
+
+            <ImageView
+                android:id="@+id/waddback"
+                android:padding="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="31dp"
+                android:src="@drawable/backbtn">
+
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metromed"
+                    android:text="Add Product"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="18dp"></TextView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="9dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_centerHorizontal="true"
+
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:paddingTop="20dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="8dp"
+                            >
+
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/waddexpname"
+                                android:src="@drawable/grpaddtext1"></ImageView>
+
+
+                            <EditText
+                                android:id="@+id/wproductname"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignRight="@+id/waddexpname"
+                                android:layout_alignLeft="@id/waddexpname"
+                                android:layout_alignBottom="@+id/waddexpname"
+                                android:layout_marginBottom="24dp"
+                                android:autofillHints="......."
+                                android:importantForAutofill="noExcludeDescendants"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Product Name"
+                                android:inputType="textCapWords"
+                                android:textColor="@color/darkgreen"
+
+                                android:textSize="18dp" />
+
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/wexpcategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/expcategory"></ImageView>
+
+
+                            <TextView
+                                android:id="@+id/wcateg"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignLeft="@id/wexpcategory"
+                                android:layout_alignRight="@+id/wexpcategory"
+                                android:layout_alignBottom="@+id/wexpcategory"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="22dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Enter Category"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/darkgreen"
+
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="7dp"
+                            >
+
+
+                            <Button
+
+                                android:id="@+id/wfoodexpbtn"
+                                android:layout_width="104dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="14dp"
+                                android:background="@drawable/electronicsbtn"
+                                ></Button>
+
+                            <Button
+                                android:id="@+id/wmedexpbtn"
+                                android:layout_width="89dp"
+                                android:layout_height="30dp"
+                                android:layout_alignLeft="@+id/wfoodexpbtn"
+                                android:layout_marginLeft="110dp"
+                                android:background="@drawable/furniturebtn">
+
+                            </Button>
+
+                            <Button
+
+                                android:id="@+id/wothersexpbtn"
+                                android:layout_width="69dp"
+                                android:layout_height="30dp"
+                                android:layout_alignLeft="@+id/wmedexpbtn"
+                                android:layout_marginLeft="95dp"
+
+                                android:background="@drawable/othersbtnwarr"></Button>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/winvoiceadd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/invoiceupload"></ImageView>
+
+
+                            <TextView
+                                android:id="@+id/wselefile"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignLeft="@id/winvoiceadd"
+                                android:layout_alignRight="@+id/winvoiceadd"
+                                android:layout_alignBottom="@+id/winvoiceadd"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="22dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Select File"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/darkgreen"
+
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/wattach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/attach"
+                                android:layout_alignRight="@+id/wselefile"
+                                android:layout_marginRight="17dp"
+                                android:layout_alignBottom="@+id/wselefile"
+                                android:layout_marginBottom="6dp"
+                                >
+
+                            </ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:id="@+id/previnvoice">
+
+                            </ImageView>
+
+
+
+
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/wexpdateadd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/expdateadd"></ImageView>
+
+
+                            <TextView
+                                android:id="@+id/wmfgdate"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignLeft="@id/wexpdateadd"
+                                android:layout_alignRight="@+id/wexpdateadd"
+                                android:layout_alignBottom="@+id/wexpdateadd"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="22dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Select Date"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/darkgreen"
+
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/wexpdatedrop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/calicon"
+                                android:layout_alignRight="@+id/wmfgdate"
+                                android:layout_marginRight="17dp"
+                                android:layout_alignBottom="@+id/wmfgdate"
+                                android:layout_marginBottom="6dp"
+                                >
+
+                            </ImageView>
+
+
+
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+
+                            <DatePicker
+                                android:id="@+id/wpickerdate"
+                                android:layout_width="360dp"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:visibility="gone"
+
+                                android:paddingLeft="10dp"></DatePicker>
+                        </RelativeLayout>
+
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/wexpclocktime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/expnotificationtimeadd"></ImageView>
+
+
+                            <TextView
+                                android:id="@+id/wexpirytime"
+                                android:layout_width="240dp"
+                                android:layout_height="28dp"
+                                android:layout_alignLeft="@id/wexpclocktime"
+                                android:layout_alignRight="@+id/wexpclocktime"
+                                android:layout_alignBottom="@+id/wexpclocktime"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="22dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="Select Time"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/darkgreen"
+
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/wexptimedrop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/dropdownbtn"
+                                android:layout_alignRight="@+id/wexpirytime"
+                                android:layout_marginRight="17dp"
+                                android:layout_alignBottom="@+id/wexpirytime"
+                                android:layout_marginBottom="6dp"
+                                ></ImageView>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+
+                            >
+
+                            <TimePicker
+                                android:id="@+id/wpickertime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:timePickerMode="spinner">
+                            </TimePicker>
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+
+                            android:paddingTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/wexpadddisc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/expdescritionadd"></ImageView>
+
+
+                            <EditText
+                                android:id="@+id/wdesc"
+                                android:layout_width="240dp"
+                                android:layout_height="wrap_content"
+
+                                android:inputType="textMultiLine"
+                                android:lines="8"
+                                android:minLines="6"
+                                android:gravity="top|left"
+                                android:maxLines="10"
+                                android:scrollbars="vertical"
+                                android:layout_alignLeft="@id/expadddisc"
+                                android:layout_alignRight="@+id/expadddisc"
+                                android:layout_alignTop="@+id/expadddisc"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginTop="40dp"
+                                android:background="@color/lightbg"
+                                android:ems="10"
+                                android:textDirection="ltr"
+                                android:fontFamily="@font/metroregular"
+                                android:hint="write anything you want
+to remember about this
+product."
+                                android:textColor="@color/darkgreen"
+                                android:textSize="18dp"
+                                tools:ignore="NotSibling" />
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp">
+
+                    <Button
+                        android:id="@+id/wsubbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/addbigbtn"
+                        android:fontFamily="@font/metrosemi"
+
+                        android:layout_centerInParent="true"
+
+                        />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.gms.ads.AdView
+
+            xmlns:ads = "http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize = "BANNER"
+            ads:adUnitId= "ca-app-pub-6230162403473872/7671601807">
+
+        </com.google.android.gms.ads.AdView>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
